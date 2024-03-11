@@ -84,7 +84,5 @@ function onGalleryScroll(e) {
         behavior: 'smooth',
     };
 
-    setTimeout(() => {
-        window.scrollBy(options);
-    }, 1);
+    window.scrollBy(options);
 }
