@@ -1,0 +1,13 @@
+body {
+    margin: 0;
+    padding: 36px 24px;
+}
+
+ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+img {
+    display: block;
+}
