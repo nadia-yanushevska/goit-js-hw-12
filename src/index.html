@@ -16,7 +16,7 @@
         <link rel="stylesheet" href="./css/styles.css" />
     </head>
     <body>
-        <section>
+        <section class="sec">
             <form class="form" js-form>
                 <input
                     class="form-input"
@@ -29,9 +29,15 @@
 
                 <button class="form-btn" type="submit" js-search>Search</button>
             </form>
-            <ul class="gallery">
-                <!-- <span class="loader"></span> -->
-            </ul>
+            <ul class="gallery"></ul>
+            <span class="loader is-hidden" js-loader></span>
+            <button
+                class="form-btn load-btn is-hidden"
+                type="button"
+                js-load-btn
+            >
+                Load more
+            </button>
         </section>
         <script type="module" src="./main.js"></script>
     </body>

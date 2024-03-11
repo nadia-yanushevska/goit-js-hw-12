@@ -37,3 +37,8 @@
 .form-btn:hover {
     background-color: #6c8cff;
 }
+
+.load-btn {
+    margin: auto;
+    margin-top: 16px;
+}
