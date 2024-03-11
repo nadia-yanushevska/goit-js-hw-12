@@ -44,7 +44,7 @@ async function onLoadBtn() {
 
     await findImages(searchValue, ++pageNum);
 
-    onGalleryScroll({ deltaY: 10, preventDefault() {} });
+    onGalleryScroll({ deltaY: 10 });
 }
 
 async function findImages(searchValue, pageNum = 1) {
@@ -74,7 +74,6 @@ async function findImages(searchValue, pageNum = 1) {
 }
 
 function onGalleryScroll(e) {
-    e.preventDefault();
     const multiplier = e.deltaY > 0 ? 2 : -2;
 
     const card = galleryContainer.querySelector('.gallery-item');
@@ -85,5 +84,7 @@ function onGalleryScroll(e) {
         behavior: 'smooth',
     };
 
-    window.scrollBy(options);
+    setTimeout(() => {
+        window.scrollBy(options);
+    }, 1);
 }
