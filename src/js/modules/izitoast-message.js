@@ -5,11 +5,7 @@ import 'izitoast/dist/css/iziToast.min.css';
 
 import { getToastOptions } from './izitoast-options.js';
 
-export function getMessage(delay, isActive) {
-    let message = isActive ? `Fulfilled` : `Rejected`;
-    message += ` promise in ${+delay}ms`;
-    return message;
-}
-export function showMessage(message, isFulfilled) {
-    iziToast.show(getToastOptions(message, isFulfilled));
+export function showMessage(message) {
+    console.log(message);
+    iziToast.show(getToastOptions(message));
 }
